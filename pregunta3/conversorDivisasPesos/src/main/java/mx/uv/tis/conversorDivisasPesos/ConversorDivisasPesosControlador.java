@@ -3,7 +3,6 @@ package mx.uv.tis.conversorDivisasPesos;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -22,22 +21,30 @@ public class ConversorDivisasPesosControlador {
    
     @RequestMapping(value ="/dolares", method = RequestMethod.POST)
     public Double pesos_dolares(@RequestBody int cantidad){
-        return cantidad * valorDolar;
+        ConversorDivisasPesos cdp = new ConversorDivisasPesos();
+        cdp.setCantidad(cantidad);
+        return cdp.getCantidad() * valorDolar;
     }
 
     @RequestMapping(value ="/libras", method = RequestMethod.POST)
     public Double pesos_libras(@RequestBody int cantidad){
-        return cantidad * valorLibra;
+        ConversorDivisasPesos cdp = new ConversorDivisasPesos();
+        cdp.setCantidad(cantidad);
+        return cdp.getCantidad() * valorLibra;
     }
 
     @RequestMapping(value ="/francos", method = RequestMethod.POST)
     public Double pesos_francos(@RequestBody int cantidad){
-        return cantidad * valorFranco;
+        ConversorDivisasPesos cdp = new ConversorDivisasPesos();
+        cdp.setCantidad(cantidad);
+        return cdp.getCantidad() * valorFranco;
     }
 
     @RequestMapping(value ="/yenes", method = RequestMethod.POST)
     public Double pesos_yenes(@RequestBody int cantidad){
-        return cantidad * valorYen;
+        ConversorDivisasPesos cdp = new ConversorDivisasPesos();
+        cdp.setCantidad(cantidad);
+        return cdp.getCantidad()* valorYen;
     }
     
 }
