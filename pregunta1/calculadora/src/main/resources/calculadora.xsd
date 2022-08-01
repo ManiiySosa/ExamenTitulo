@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="https://tis.uv.mx/calculadora"
+ xmlns:tns="https://tis.uv.mx/calculadora"
+  elementFormDefault="qualified">
+
+<xs:element name="sumarRequest">
+      <xs:complexType>
+          <xs:sequence>
+              <xs:element name="numero1" type="xs:int" minOccurs="0"/>
+              <xs:element name="numero2" type="xs:int" minOccurs="0"/>
+          </xs:sequence>
+      </xs:complexType>
+  </xs:element>
+  <xs:element name="sumarResponse">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="respuesta" type="xs:int" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+<xs:element name="restarRequest">
+      <xs:complexType>
+          <xs:sequence>
+              <xs:element name="numero1" type="xs:int" minOccurs="0"/>
+              <xs:element name="numero2" type="xs:int" minOccurs="0"/>
+          </xs:sequence>
+      </xs:complexType>
+  </xs:element>
+  <xs:element name="restarResponse">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="respuesta" type="xs:int" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+<xs:element name="multiplicarRequest">
+      <xs:complexType>
+          <xs:sequence>
+              <xs:element name="numero1" type="xs:int" minOccurs="0"/>
+              <xs:element name="numero2" type="xs:int" minOccurs="0"/>
+          </xs:sequence>
+      </xs:complexType>
+  </xs:element>
+  <xs:element name="multiplicarResponse">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="respuesta" type="xs:int" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+<xs:element name="dividirRequest">
+      <xs:complexType>
+          <xs:sequence>
+              <xs:element name="numero1" type="xs:int" minOccurs="0"/>
+              <xs:element name="numero2" type="xs:int" minOccurs="0"/>
+          </xs:sequence>
+      </xs:complexType>
+  </xs:element>
+  <xs:element name="dividirResponse">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="respuesta" type="xs:int" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+</xs:schema>  

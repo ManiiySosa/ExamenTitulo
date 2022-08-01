@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="2.1" xmlns="http://java.sun.com/xml/ns/jaxb">
+  <!--
+
+Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.2 
+Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2022.07.31 a las 11:43:24 PM CDT 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="https://tis.uv.mx/calculadora">
+    <schemaBindings map="false">
+      <package name="https.tis_uv_mx.calculadora"/>
+    </schemaBindings>
+    <bindings scd="tns:sumarRequest">
+      <class ref="https.tis_uv_mx.calculadora.SumarRequest"/>
+    </bindings>
+    <bindings scd="tns:sumarResponse">
+      <class ref="https.tis_uv_mx.calculadora.SumarResponse"/>
+    </bindings>
+    <bindings scd="tns:restarRequest">
+      <class ref="https.tis_uv_mx.calculadora.RestarRequest"/>
+    </bindings>
+    <bindings scd="tns:restarResponse">
+      <class ref="https.tis_uv_mx.calculadora.RestarResponse"/>
+    </bindings>
+    <bindings scd="tns:multiplicarRequest">
+      <class ref="https.tis_uv_mx.calculadora.MultiplicarRequest"/>
+    </bindings>
+    <bindings scd="tns:multiplicarResponse">
+      <class ref="https.tis_uv_mx.calculadora.MultiplicarResponse"/>
+    </bindings>
+    <bindings scd="tns:dividirRequest">
+      <class ref="https.tis_uv_mx.calculadora.DividirRequest"/>
+    </bindings>
+    <bindings scd="tns:dividirResponse">
+      <class ref="https.tis_uv_mx.calculadora.DividirResponse"/>
+    </bindings>
+  </bindings>
+</bindings>
+
