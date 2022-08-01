@@ -14,7 +14,6 @@ public class ConversorDivisasPesosControlador {
     double valorYen = 6.46;
     double resultado = 0;
 
-
     @RequestMapping("/")
     public String home(){
         return("home");
@@ -24,8 +23,8 @@ public class ConversorDivisasPesosControlador {
     public Double pesos_dolares(@RequestBody double cantidad){
         ConversorDivisasPesos cdp = new ConversorDivisasPesos();
         cdp.setCantidad(cantidad);
-        resultado = cdp.getCantidad() * valorDolar;
-        return resultado;
+        cdp.setResultado(cdp.getCantidad()* valorDolar);
+        return cdp.getResultado();
     }
 
     @RequestMapping(value ="/libras", method = RequestMethod.POST)
