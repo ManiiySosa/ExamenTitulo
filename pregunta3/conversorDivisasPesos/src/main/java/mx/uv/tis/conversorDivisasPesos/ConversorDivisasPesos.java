@@ -1,13 +1,17 @@
 package mx.uv.tis.conversorDivisasPesos;
 
 public class ConversorDivisasPesos {
-    private int cantidad;
+    private double cantidad;
 
-    public int getCantidad() {
+    public ConversorDivisasPesos(){
+        
+    }
+
+    public double getCantidad() {
         return cantidad;
     }
 
-    public void setCantidad(int cantidad) {
+    public void setCantidad(double cantidad) {
         this.cantidad = cantidad;
     }
     
